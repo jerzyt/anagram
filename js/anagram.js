@@ -33,7 +33,7 @@ function printAnagrams(anagramHash) {
 		if(x) {
 			var a = anagramHash[x];
 			if(a.length > 3) {
-				anagrams += '<p>' + x + '\t=>\t' + a.join(', ') + '</p>';
+				anagrams += '<em class="key">' + x + '</em>\t=>\t' + a.join(', ') + '<br/>';
 			}
 		}
 	}

@@ -23,11 +23,15 @@ body {
 }
 
 #anagrams {
-	background-color: #ffffc0;
+	background-color: #eeeeee;
 	width: 850px;
 	margin: 0 auto;
 	padding: 40px 40px;
 	box-shadow: 0 0 8px black;
+}
+
+.key {
+	background-color: #ffa060;
 }
 
 .color {
