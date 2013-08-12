@@ -13,6 +13,7 @@ These results were produced on my old Centos box with:
 The following command will run all language tests:
 bash -x run_all.sh &> anagram.log
 
+To run the JavaScript version in your browser http://ec2-54-218-125-223.us-west-2.compute.amazonaws.com/
 
 
 + echo '### testing Ruby #######################'  
