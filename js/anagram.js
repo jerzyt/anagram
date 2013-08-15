@@ -33,7 +33,7 @@ function printAnagrams(anagramHash) {
 		if(x) {
 			var a = anagramHash[x];
 			if(a.length > 3) {
-				anagrams += '<tr><td class="key">' + x + '</td><td>=></td><td>' + a.join(', ') + '</td></tr>';
+				anagrams += '<tr><td class="key">' + x + '</td><td><img src="images/arrow.gif"></td><td>' + a.join(', ') + '</td></tr>';
 			}
 		}
 	}
