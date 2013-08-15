@@ -28,15 +28,16 @@ function findAnagrams(words) {
 }
 
 function printAnagrams(anagramHash) {
-	var anagrams = '';
+	var anagrams = '<table>';
 	for(var x in anagramHash) {
 		if(x) {
 			var a = anagramHash[x];
 			if(a.length > 3) {
-				anagrams += '<em class="key">' + x + '</em>\t=>\t' + a.join(', ') + '<br/>';
+				anagrams += '<tr><td class="key">' + x + '</td><td>=></td><td>' + a.join(', ') + '</td></tr>';
 			}
 		}
 	}
+	anagrams += '</table>';
 	return anagrams;
 }
 

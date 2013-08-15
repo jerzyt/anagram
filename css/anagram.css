@@ -22,10 +22,25 @@ body {
 	padding-bottom: 60px;
 }
 
+/*
 #anagrams {
 	background-color: #eeeeee;
 	width: 850px;
 	margin: 0 auto;
+	padding: 40px 40px;
+	box-shadow: 0 0 8px black;
+}
+*/
+#anagrams {
+	background-color: #eeeeee;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	height: 60%;
+	width: 50%;
 	padding: 40px 40px;
 	box-shadow: 0 0 8px black;
 }
