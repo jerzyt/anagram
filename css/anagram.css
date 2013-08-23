@@ -1,7 +1,7 @@
 html,
 body {
 	height: 100%;
-	background-color: #aaa;
+	background-color: #777;
 }
 
 #container {
@@ -23,7 +23,7 @@ body {
 
 #anagrams {
 	overflow: auto;
-	background-color: #eeeeee;
+	background-color: #eee;
 	margin: auto;
 	position: absolute;
 	top: 100px;
@@ -37,5 +37,5 @@ body {
 }
 
 .key {
-	background-color: #80cdc0;
+	background-color: #ace;
 }
