@@ -20,10 +20,10 @@ anagramKeys <- subset(counts, select=(Var1), subset=(Freq > 3))
 #	5.	Print the anagrams
 printAnagrams <- function(aKey) {
 	anagrams <- paste(subset(dic, subset=(aKey == key))[,1], collapse=', ')
-	print(paste(aKey, ' => ', anagrams))
+	cat(aKey, "\t=>\t", anagrams, "\n")
 }
 
 apply(anagramKeys, 1, printAnagrams)
 endTime <- proc.time()['elapsed']
 elapsed <- endTime - startTime 
-print(elapsed)
+cat("elapsed ", elapsed, "\n")
