@@ -1,28 +1,19 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Jan 12 09:11:59 2020
-
-@author: JerzyT
-"""
+from collections import defaultdict
 
 f = open('words')
 words = f.readlines()
 f.close()
 
-anaDict = {}
+anaDict = defaultdict(list)
 
 for word in words:
-    word = word.rstrip()
-    l = list(word)
-    l.sort()
-    key = ''.join(l)
-    if key in anaDict.keys():
-        anaDict[key].append(word)
-    else:
-        anaDict[key] = [word]
+	word = word.rstrip()
+	l = list(word)
+	l.sort()
+	key = ''.join(l)
+	anaDict[key].append(word)
 
-for key in anaDict.keys():
+for key in anaDict:
     val = anaDict[key]
-    if(len(val) > 3):
+    if len(val) > 3:
         print(key + ' => ' + ', '.join(val))
-
