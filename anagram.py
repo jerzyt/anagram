@@ -13,7 +13,6 @@ for word in words:
 	key = ''.join(l)
 	anaDict[key].append(word)
 
-for key in anaDict:
-    val = anaDict[key]
+for key, val in anaDict.items():
     if len(val) > 3:
-        print(key + ' => ' + ', '.join(val))
+		   print(key + ' => ' + ', '.join(val))
